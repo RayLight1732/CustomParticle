@@ -1,0 +1,7 @@
+name: CustomParticle
+version: ${project.version}
+main: jp.ray.light.bukkit.customparticle.CustomParticle
+
+commands:
+  customparticle:
+    aliases: cp
