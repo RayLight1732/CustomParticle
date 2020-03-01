@@ -130,7 +130,7 @@ class ParticleCommand : CommandExecutor ,TabCompleter{
                             sender.sendMessage("${ChatColor.RED}そのようなパーティクルは存在しません。")
                             return false
                         }
-                        ,sender.getLocation()?.fromString(args[3],args[4],args[5],args[6],args[7]) ?: kotlin.run{
+                        ,sender.getLocation()?.fromString(args[4],args[5],args[6],args[7],args[8]) ?: kotlin.run{
                     sender.sendMessage("正確な値を入力してください。")
                     return false
                 }
@@ -138,7 +138,7 @@ class ParticleCommand : CommandExecutor ,TabCompleter{
                     message()
                     return false
                 }
-                        ,args[8].toIntOrNull() ?: kotlin.run {
+                        ,args[3].toIntOrNull() ?: kotlin.run {
                     message()
                     return false
                 }, 0.2)
